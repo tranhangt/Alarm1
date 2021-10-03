@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.alarmclock.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_setTimeFragment"
+            app:destination="@id/setTimeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_stopWatchFragment"
+            app:destination="@id/stopWatchFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_countDownFragment"
+            app:destination="@id/countDownFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/setTimeFragment"
+        android:name="com.example.alarmclock.fragment.SetTimeFragment"
+        android:label="fragment_set_time"
+        tools:layout="@layout/fragment_set_time" >
+        <action
+            android:id="@+id/action_setTimeFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/countDownFragment"
+        android:name="com.example.alarmclock.fragment.CountDownFragment"
+        android:label="fragment_count_down"
+        tools:layout="@layout/fragment_count_down" />
+    <fragment
+        android:id="@+id/stopWatchFragment"
+        android:name="com.example.alarmclock.fragment.StopWatchFragment"
+        android:label="fragment_stop_watch"
+        tools:layout="@layout/fragment_stop_watch" />
+</navigation>

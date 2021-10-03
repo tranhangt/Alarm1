@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:iconTint="@color/grey"
+        android:id="@+id/homeFragment"
+        android:title="Chuông báo"
+        android:icon="@drawable/clock"/>
+    <item
+        android:iconTint="@color/grey"
+        android:id="@+id/stopWatchFragment"
+        android:title="Bấm giờ"
+        android:icon="@drawable/stopwatch"/>
+    <item
+        android:iconTint="@color/grey"
+        android:id="@+id/countDownFragment"
+        android:title="Đếm giờ"
+        android:icon="@drawable/count_down"/>
+</menu>
